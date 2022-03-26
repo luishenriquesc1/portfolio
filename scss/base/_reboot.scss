@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+    font-family: $font-text;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    position: relative;
+    z-index: 5;
+    max-width: 92rem;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+.grid-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 850px) {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+.text {
+    font-size: $font-text-height;
+    color: $dark-two;
+    line-height: 1.6;
+    @media (max-width: 1400px) {
+        font-size: $font-menu-active;
+    }
+}
+
+.image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.z-index {
+    position: relative;
+    z-index: 2;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.85rem 2rem;
+    background-color: $main-color;
+    color: $light-one;
+    border-radius: 2rem;
+    font-size: $font-menu;
+    text-transform: uppercase;
+    font-weight: $font-medium;
+    transition: 0.3s;
+    &:hover {
+        background-color: $main-color-active;
+    }
+    @media (max-width: 1400px) {
+        padding: 0.75rem 1.7rem !important;
+        font-size: 0.8rem !important;
+    }
+}
+
+.section {
+    padding: 7rem 0;
+    &__header {
+        text-align: center;
+    }
+    @media (max-width: 1400px) {
+        padding: 4.5rem 0;
+    }
+}
+
+.title-sm {
+    color: $dark-one;
+    font-weight: $font-semi-bold;
+    font-size: 1.6rem;
+    @media (max-width: 1400px) {
+        font-size: 1.2rem;
+    }
+}
+.points-sq {
+    width: 210px;
+}
+
+.btn.small {
+    padding: 0.7rem 1.8rem;
+    font-size: 1rem;
+    @media (max-width: 1400px) {
+        padding: 0.65rem 1.6rem !important;
+        font-size: 0.7rem !important;
+    }
+}
+
+.title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1rem;
+    line-height: 1;
+    font-size: 2.8rem;
+    margin-bottom: 0.6rem;
+    text-align: center;
+    &::before {
+        content: attr(data-title);
+        display: block;
+        margin-bottom: 0.4rem;
+        color: $main-color;
+        font-size: 1rem;
+        font-weight: $font-medium;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        @media (max-width: 1400px) {
+            margin-bottom: 0.2rem;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 90px;
+        height: 5px;
+        border-radius: 3px;
+        background: linear-gradient(90deg, #2d2c31 0%, #784cfb 35%, #e7e3e3 100%);
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        @media (max-width: 1400px) {
+            height: 3.5px;
+            width: 70px;
+        }
+    }
+    @media (max-width: 1400px) {
+        font-size: 2.1rem;
+        padding-bottom: 0.65rem;
+    }
+}
+
+//Tema Escuro
+.dark {
+    .btn {
+        background-color: $main-color-dark;
+        color: $light-one;
+        &:hover {
+            color: $light-two-dark;
+            background-color: $main-color-active-dark;
+        }
+    }
+
+    .text {
+        color: $dark-two-dark;
+    }
+
+    .title-sm {
+        color: $light-one;
+    }
+
+    .title {
+        color: $dark-two-dark;
+        &::before {
+            content: attr(data-title);
+            color: rgba(100, 188, 244, 1);
+        }
+        &::after {
+            content: "";
+            background: linear-gradient(
+                90deg,
+                rgba(2, 0, 36, 1) 0%,
+                rgba(25, 46, 58, 1) 35%,
+                rgba(100, 188, 244, 1) 100%
+            );
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    background-color: rgba(#000, 0.5);
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(25, 46, 58, 1) 35%, rgba(100, 188, 244, 1) 100%);
+}
+
+::-webkit-scrollbar-thumb {
+    background: $skill-color-dark;
+    border-radius: 10px;
+    &:hover {
+        background: #ccc;
+    }
+}
+
+.stop {
+    height: 100%;
+    overflow: hidden;
+}

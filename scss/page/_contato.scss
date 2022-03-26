@@ -1,0 +1,199 @@
+.contact {
+    width: 100%;
+    padding: 13.5rem 0 8.5rem 0;
+    position: relative;
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        left: 0;
+    }
+
+    &::before {
+        top: 0;
+        height: 40%;
+        background: url("../img/contact-light.jpeg") center center / cover;
+        background-attachment: fixed;
+        background-color: rgba(#000, 0.7);
+        background-blend-mode: hue;
+    }
+    &::after {
+        top: 40%;
+        height: 60%;
+        background: url("../img/contact-bg.png") center bottom / cover;
+    }
+    &-box {
+        width: 100%;
+        border-radius: 45px;
+        background-color: $light-one;
+        padding: 5.5rem 4.5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        @media (max-width: 1400px) {
+            padding: 3.6irem 3rem;
+        }
+    }
+    &-info {
+        padding-right: 2rem;
+        .title {
+            &::after {
+                left: 0;
+                transform: initial;
+            }
+        }
+        @media (max-width: 1400px) {
+            padding-right: 1rem;
+        }
+    }
+    &-form {
+        padding-left: 2rem;
+    }
+    &-icon {
+        min-width: 67px;
+        height: 67px;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: $main-color;
+        color: $light-one;
+        text-align: center;
+        font-size: 1.4rem;
+        margin-right: 1rem;
+        i {
+            line-height: 67px;
+            @media (max-width: 1400px) {
+                line-height: 50px;
+            }
+        }
+        @media (max-width: 1400px) {
+            min-width: 50px;
+            height: 50px;
+            font-size: 1rem;
+            margin-right: 0.8rem;
+        }
+    }
+    .information-wrap {
+        margin-top: 2rem;
+        .information {
+            display: flex;
+            align-items: center;
+            &:not(:last-child) {
+                margin-bottom: 1.3rem;
+            }
+            .info-text {
+                font-size: 1.3rem;
+                display: inline-block;
+                @media (max-width: 1400px) {
+                    font-size: 1.05rem;
+                }
+            }
+        }
+        @media (max-width: 1400px) {
+            margin-top: 1.2rem;
+        }
+    }
+
+    &-form {
+        .title {
+            margin: 0;
+            &::after {
+                display: none;
+            }
+        }
+        .row {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            grid-column-gap: 0.6rem;
+        }
+        .btn {
+            margin-top: 0.3rem;
+        }
+        @media (max-width: 1400px) {
+            padding-left: 1rem;
+        }
+    }
+    &-input {
+        padding: 1.2rem 2.1rem;
+        margin: 0.6rem 0;
+        border: none;
+        outline: none;
+        background-color: $light-three;
+        border-radius: 2rem;
+        font-weight: 600;
+        font-size: 1.25rem;
+        transition: 0.3s;
+        &::placeholder {
+            font-weight: 400;
+        }
+        &.textarea {
+            resize: none;
+            min-height: 280px;
+        }
+        &:hover {
+            background-color: $dark-one-dark;
+            &::placeholder {
+                color: $portifolio-background-dark;
+            }
+        }
+        &:focus {
+            background-color: $progress-color;
+        }
+        @media (max-width: 1400px) {
+            font-size: 0.9rem;
+            padding: 0.9rem 1.6rem;
+            margin: 0.4rem 0;
+        }
+    }
+    @media (max-width: 1400px) {
+        padding: 9rem 0 6rem 0;
+    }
+}
+
+//Tema Escuro
+.dark {
+    .contact {
+        &::before {
+            background: url("../img/contact-dark.jpeg") center center / cover;
+            background-attachment: fixed;
+            background-color: rgba(#000, 0.7);
+            background-blend-mode: hue;
+        }
+        &::after {
+            background: url("../img/contact-bg.png") center bottom / cover;
+            background-color: rgba($portifolio-background-dark, 0.7);
+            background-blend-mode: hue;
+        }
+        &-box {
+            background-color: $portifolio-background-dark;
+        }
+        &-icon {
+            background-color: $main-color-dark;
+            color: $light-one;
+        }
+        .information-wrap {
+            .information {
+                .info-text {
+                    color: $light-one;
+                }
+            }
+        }
+
+        &-input {
+            background-color: $light-three;
+            &::placeholder {
+                color: $portifolio-background-dark;
+            }
+            &:hover {
+                background-color: rgba($dark-two, 0.6);
+                &::placeholder {
+                    color: $light-three;
+                }
+            }
+            &:focus {
+                background-color: $light-one-dark;
+            }
+        }
+    }
+}

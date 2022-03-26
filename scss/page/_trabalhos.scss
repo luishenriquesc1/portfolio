@@ -1,0 +1,119 @@
+.jobs {
+    .section {
+        &__header {
+            margin-bottom: 20px;
+        }
+    }
+    &__carousel {
+        margin: 20px 0;
+        .slick-track {
+            display: flex;
+            align-items: center;
+            img {
+                margin: auto;
+                @media (max-width: 1400px) {
+                    width: 130px;
+                }
+            }
+        }
+    }
+    &__dice {
+        .row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            .col-md-6 {
+                -webkit-box-flex: 0;
+                flex: 0 0 50%;
+                max-width: 50%;
+                .box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .text {
+                    margin-left: 1rem;
+                }
+                .info {
+                    font-size: 0.7em;
+                }
+                svg {
+                    fill: #003349;
+                    width: 100px;
+                }
+                @media (max-width: 767px) {
+                    width: 100%;
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+            }
+            .details {
+                margin: 15px auto;
+                p {
+                    margin-bottom: 1rem;
+                    @media (max-width: 1400px) {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+    .border {
+        margin-top: 3rem;
+        height: 2px;
+        background: linear-gradient(
+            90deg,
+            rgba(120, 76, 251, 1) 0%,
+            rgba(120, 76, 251, 1) 35%,
+            rgba(231, 227, 227, 1) 100%
+        );
+        position: relative;
+        &::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-image: url("../img/passaro.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+        }
+    }
+}
+
+.dark {
+    .jobs {
+        background-color: $skill-color-two;
+        &__dice {
+            .row {
+                .col-md-6 {
+                    color: $light-one;
+                    svg {
+                        fill: #fff;
+                    }
+                }
+                .details {
+                    p {
+                        color: $light-one;
+                    }
+                }
+            }
+        }
+        .border {
+            height: 2px;
+            background: linear-gradient(
+                90deg,
+                rgba(2, 0, 36, 1) 0%,
+                rgba(25, 46, 58, 1) 35%,
+                rgba(100, 188, 244, 1) 100%
+            );
+            position: relative;
+        }
+    }
+}

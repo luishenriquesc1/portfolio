@@ -1,0 +1,162 @@
+.home {
+    background-color: $light-three;
+    padding: 6rem 0 0 0;
+    &__content {
+        .grid-two {
+            grid-template-columns: 2.5fr 3.5fr;
+            min-height: calc(100vh - 6rem);
+            padding-bottom: 2.5rem;
+            text-align: left;
+        }
+        &__title {
+            font-size: 3.8rem;
+            line-height: 0.8;
+            color: $dark-one;
+            @media (max-width: 1400px) {
+                font-size: 2.6rem !important;
+            }
+            @media (max-width: 850px) {
+                font-size: 2.3rem !important;
+            }
+        }
+        &__text {
+            margin: 2.15rem 0;
+            @media (max-width: 1400px) {
+                margin: 1.1rem 0;
+            }
+        }
+        .column-one {
+            display: flex;
+            margin-right: 1.5rem;
+            .social-media {
+                display: flex;
+                flex-direction: column;
+                margin-right: 20px;
+                color: #7b7b7b;
+                font-size: 1.5rem;
+                transition: 0.3s;
+                a {
+                    i {
+                        color: $main-color;
+                        &:hover {
+                            color: $main-color-active;
+                        }
+                    }
+                }
+            }
+            .btn {
+                display: inline-block;
+                padding: 0.85rem 2rem;
+                background-color: $main-color;
+                color: $light-one;
+                border-radius: 2rem;
+                font-size: $font-menu;
+                text-transform: uppercase;
+                font-weight: $font-medium;
+                transition: 0.3s;
+                &:hover {
+                    background-color: $main-color-active;
+                }
+            }
+            @media (max-width: 1400px) {
+                margin-right: 1rem !important;
+            }
+            @media (max-width: 850px) {
+                margin-right: 0;
+                margin: 0 auto;
+                margin-top: 1rem;
+                max-width: 550px;
+            }
+        }
+        .column-two {
+            margin-left: 1.5rem;
+            @media (max-width: 1400px) {
+                margin-left: 1rem !important;
+            }
+            @media (max-width: 850px) {
+                margin-left: 0;
+                margin-top: 1rem;
+            }
+        }
+        .image {
+            min-width: 750px;
+            right: 0;
+            .img-element {
+                width: 100%;
+                right: 0;
+                transition: 1.5s ease;
+                &:hover {
+                    position: relative;
+                    right: 10px;
+                    fill: #009966;
+                }
+                @media (max-width: 1400px) {
+                    max-width: 500px;
+                }
+                @media (max-width: 850px) {
+                    max-width: 400px;
+                    margin: 0 auto;
+                }
+            }
+            &__eu {
+                width: 100%;
+                transition: 1.5s ease;
+                &:hover {
+                    width: 110%;
+                }
+            }
+        }
+    }
+}
+
+//Tema Escuro
+.dark {
+    .home {
+        background-color: $portifolio-background-dark;
+        &__content {
+            &__title {
+                font-size: 3.8rem;
+                line-height: 0.8;
+                color: $light-one;
+            }
+            .column-one {
+                .social-media {
+                    a {
+                        i {
+                            color: $main-color-dark;
+                            &:hover {
+                                color: $main-color-active-dark;
+                            }
+                        }
+                    }
+                }
+                .btn {
+                    background-color: $main-color-dark;
+                    color: $light-one;
+                    &:hover {
+                        color: $light-two-dark;
+                        background-color: $main-color-active-dark;
+                    }
+                }
+            }
+            .column-two {
+                margin-left: 1.5rem;
+            }
+            .image {
+                min-width: 750px;
+                right: 0;
+                .img-element {
+                    width: 100%;
+                    right: 0;
+                    fill: $main-color-active-dark;
+                    transition: 1.5s ease;
+                    &:hover {
+                        position: relative;
+                        right: 10px;
+                        fill: $main-color;
+                    }
+                }
+            }
+        }
+    }
+}

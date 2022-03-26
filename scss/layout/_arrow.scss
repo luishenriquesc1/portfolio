@@ -1,0 +1,117 @@
+.light {
+    .gotop {
+        float: right;
+        padding: 1px 11px;
+        margin-top: 10px;
+        background: $dark-one;
+        color: $light-one;
+        position: fixed;
+        right: 30px;
+        bottom: 100px;
+        z-index: 999;
+        height: 39px;
+        width: 39px;
+        border-radius: 50%;
+        font-size: 1.1rem;
+        transition: 0.3s;
+        i {
+            line-height: 39px;
+        }
+        &:hover {
+            background: $main-color;
+            color: $light-one;
+        }
+        i:first-child {
+            display: block;
+        }
+        i:last-child {
+            display: none;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background-color: $main-color-dark;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.7);
+            border-radius: 50%;
+            opacity: 0.08;
+            animation: scale 1.2s ease-out infinite 1s;
+        }
+        @keyframes scale {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.15;
+            }
+
+            100% {
+                transform: translate(-50%, -50%) scale(1.6);
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.dark {
+    .gotop {
+        float: right;
+        padding: 1px 5px;
+        margin-top: 10px;
+        background: $main-color-dark;
+        color: $light-one;
+        position: fixed;
+        right: 30px;
+        bottom: 100px;
+        z-index: 999;
+        height: 39px;
+        width: 39px;
+        border-radius: 50%;
+        font-size: 1.8rem;
+        transition: 0.3s;
+        &:hover {
+            color: $light-two-dark;
+            background-color: $main-color-active-dark;
+        }
+        i:last-child {
+            display: block;
+        }
+        i:first-child {
+            display: none;
+        }
+        @media (max-width: 980px) {
+            display: none;
+        }
+        i {
+            line-height: 39px;
+            color: $light-one;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background-color: $light-one;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.7);
+            border-radius: 50%;
+            opacity: 0.08;
+            animation: scale 1.2s ease-out infinite 1s;
+        }
+        @keyframes scale {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.15;
+            }
+    
+            100% {
+                transform: translate(-50%, -50%) scale(1.6);
+                opacity: 0;
+            }
+        }
+    }
+}

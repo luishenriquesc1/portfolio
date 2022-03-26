@@ -1,0 +1,23 @@
+.hireme {
+    padding: 7rem 0;
+    .container {
+        text-align: center;
+    }
+    .title {
+        margin-bottom: 1.3rem;
+    }
+    .text {
+        max-width: 1000px;
+        margin: 0 auto 1.6rem auto;
+    }
+    @media (max-width: 1400px) {
+        padding: 6rem;
+    }
+}
+
+//Tema Escuro
+.dark {
+    .hireme {
+        background-color: $skill-color-two;
+    }
+}

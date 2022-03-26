@@ -1,0 +1,254 @@
+.portfolio {
+    position: relative;
+    width: 100%;
+    background-color: $light-two;
+    .background-bg {
+        position: absolute;
+        width: 100%;
+        height: 520px;
+        top: 0;
+        left: 0;
+        background-color: $main-color;
+        .overlay.overlay-sm {
+            .shape {
+                filter: brightness(0) invert(1);
+                opacity: 0.15;
+                height: 40px;
+                position: absolute;
+            }
+            .wave {
+                height: initial;
+                width: 70px;
+            }
+            .xshape {
+                height: 30px;
+            }
+            .square {
+                top: 28%;
+                left: 20%;
+            }
+            .circle {
+                top: 8%;
+                right: 35%;
+            }
+            .triangle {
+                bottom: 10%;
+                right: 4%;
+            }
+            .half-circle1 {
+                bottom: 13%;
+                left: 5%;
+            }
+            .half-circle2 {
+                bottom: 35%;
+                right: 20%;
+            }
+            .xshape {
+                top: 10%;
+                right: 8%;
+            }
+            .wave {
+                top: 38%;
+                left: 6%;
+            }
+        }
+        @media (max-width: 1400px) {
+            height: 370px;
+        }
+    }
+    &__header {
+        text-align: center;
+    }
+    .title {
+        color: $light-one;
+        &::before {
+            color: $light-one;
+        }
+        &::after {
+            background-color: $light-one;
+        }
+    }
+    &__filter {
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        .filter-btn {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            margin: 0.45rem 0.4rem;
+            padding: 0.85rem 1.8rem;
+            color: $light-one;
+            text-transform: uppercase;
+            font-weight: $font-medium;
+            font-size: 1.1rem;
+            line-height: 1;
+            cursor: pointer;
+            border-radius: 2rem;
+            transition: 0.3s;
+            @media (max-width: 1400px) {
+                padding: 0.6rem 1.45rem;
+                font-size: 0.7rem;
+            }
+        }
+        .active {
+            background-color: $light-one;
+            color: $main-color;
+        }
+    }
+    &__body {
+        .grid {
+            width: 100%;
+            margin: 1.5rem 0;
+            .grid-item {
+                width: 33.33%;
+                padding: 1rem 1.2rem;
+                display: flex;
+                justify-content: center;
+                .gallery-image {
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 16px;
+                    height: 330px;
+                    width: 100%;
+                    cursor: pointer;
+                    &:hover {
+                        .img-overlay {
+                            opacity: 1;
+                        }
+                        img {
+                            transform: translate(-50%, -50%) scale(1.1);
+                        }
+                    }
+                    img {
+                        position: absolute;
+                        height: 115%;
+                        width: initial;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        cursor: pointer;
+                        transform-origin: center;
+                        transition: 0.5s;
+                    }
+                    .img-overlay {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        z-index: 2;
+                        color: $light-one;
+                        background-color: rgba($portifolio-background, 0.55);
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: flex-end;
+                        padding: 2rem 3.2em;
+                        opacity: 0;
+                        transition: 0.5s;
+                        h3 {
+                            font-weight: $font-semi-bold;
+                            text-transform: uppercase;
+                            font-size: 1.5rem;
+                            @media (max-width: 1400px) {
+                                font-size: 1.1rem;
+                            }
+                        }
+                        h5 {
+                            font-size: 1.15rem;
+                            font-weight: 300;
+                            @media (max-width: 1400px) {
+                                font-size: 0.8rem;
+                            }
+                        }
+                        .plus {
+                            position: relative;
+                            margin: auto 0;
+                            &:before,
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                width: 4.5rem;
+                                height: 3px;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                background-color: $light-one;
+                                border-radius: 3px;
+                                @media (max-width: 1400px) {
+                                    width: 2.8rem;
+                                }
+                            }
+                            &:before {
+                                transform: translate(-50%, -50%) rotate(90deg);
+                            }
+                        }
+                        .img-description {
+                            width: 100%;
+                        }
+                        @media (max-width: 1400px) {
+                            padding: 1.4rem 2rem;
+                        }
+                    }
+                    @media (max-width: 1400px) {
+                        height: 250px;
+                        max-width: 325px;
+                    }
+                }
+                @media (max-width: 1400px) {
+                    padding: 0.8rem;
+                }
+            }
+            @media (max-width: 1400px) {
+                margin: 0.8rem 0;
+            }
+        }
+        .more-folio {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+//Tema Escuro
+.dark {
+    .portfolio {
+        background-color: $light-three-dark;
+        .background-bg {
+            background-color: $portifolio-background-dark;
+        }
+
+        &__filter {
+            .filter-btn {
+                color: $light-one;
+            }
+            .active {
+                background-color: $main-color-dark;
+                color: $dark-two-dark;
+            }
+        }
+        &__body {
+            .grid {
+                .grid-item {
+                    .gallery-image {
+                        &:hover {
+                            .img-overlay {
+                                opacity: 1;
+                            }
+                            img {
+                                transform: translate(-50%, -50%) scale(1.1);
+                            }
+                        }
+                        .img-overlay {
+                            color: $light-one;
+                            background-color: rgba($main-color-dark, 0.55);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

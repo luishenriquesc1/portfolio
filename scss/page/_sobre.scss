@@ -1,0 +1,159 @@
+.about {
+    overflow: hidden;
+    &__header {
+        display: flex;
+        justify-content: center;
+    }
+    svg {
+        max-width: 600px;
+        transition: 1.5s ease;
+        right: 0;
+        &:hover {
+            right: 10px;
+            .image {
+                &__eu {
+                    width: 110%;
+                }
+            }
+        }
+        .image {
+            &__eu {
+                transition: 1.5s ease;
+                width: 100%;
+            }
+        }
+        @media (max-width: 1400px) {
+            max-width: 420px !important;
+        }
+    }
+    .text {
+        margin-top: 1rem;
+        @media (max-width: 1400px) {
+            margin-top: 0.7rem;
+        }
+    }
+    .column-1 {
+        position: relative;
+        &:before {
+            content: "About";
+            position: absolute;
+            font-size: 8rem;
+            font-weight: 800;
+            color: $main-color;
+            opacity: 0.04;
+            top: 20px;
+            left: 0;
+            line-height: 0;
+            @media (max-width: 1400px) {
+                font-size: 6rem;
+                top: 13px;
+            }
+        }
+        .skills {
+            margin: 1.5rem 0 2.5rem 0;
+            @media (max-width: 1400px) {
+                margin: 0.9rem 0 1.7rem 0;
+            }
+            .skill {
+                margin: 1rem 0;
+                &__title {
+                    color: $skill-color;
+                    font-weight: $font-semi-bold;
+                    margin-bottom: 0.3rem;
+                    @media (max-width: 1400px) {
+                        font-size: 1rem;
+                    }
+                }
+                &__bar {
+                    width: 70%;
+                    height: 8px;
+                    border-radius: 4px;
+                    background-color: $progress-color;
+                    position: relative;
+                    overflow: hidden;
+
+                    &__progress {
+                        position: absolute;
+                        height: 100%;
+                        width: 0%;
+                        top: 0;
+                        left: 0;
+                        background: linear-gradient(90deg, #784cfb 0%, #784cfb 35%, #c4b5f7 100%);
+                        transition: 1s;
+                        border-radius: 4px;
+                    }
+                    @media (max-width: 1400px) {
+                        height: 6px;
+                    }
+                }
+            }
+        }
+    }
+
+    .column-2 {
+        .points {
+            opacity: 0.3;
+            position: absolute;
+            width: 300px;
+            top: 65%;
+            left: 80%;
+            opacity: 0.1;
+            @media (max-width: 1400px) {
+                width: 230px;
+                left: 65%;
+            }
+        }
+    }
+}
+
+//Tema Escuro
+.dark {
+    .about {
+        background-color: $skill-color-two;
+        svg {
+            max-width: 600px;
+            transition: 1.5s ease;
+            right: 0;
+            fill: $main-color-dark;
+            &:hover {
+                right: 10px;
+                fill: $main-color;
+                .image {
+                    &__eu {
+                        width: 110%;
+                    }
+                }
+            }
+            .image {
+                &__eu {
+                    transition: 1.5s ease;
+                    width: 100%;
+                }
+            }
+        }
+        .column-1 {
+            .skills {
+                .skill {
+                    &__title {
+                        color: $dark-one-dark;
+                    }
+                    &__bar {
+                        background-color: $portifolio-background-dark;
+
+                        &__progress {
+                            background: linear-gradient(90deg, #020024 0%, #192e3a 35%, #64bcf4 100%);
+                        }
+                    }
+                }
+            }
+            &::before {
+                color: $main-color-dark;
+            }
+        }
+        .column-2 {
+            .points {
+                filter: hue-rotate(294deg);
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+// Cores
+$light-one: #fff;
+$light-two: #f9fafb;
+$light-three: #f6f7fb;
+$dark-one: #333;
+$dark-two: #7a7a7a;
+$main-color: #784cfb;
+$main-color-active: #6b44e0;
+$portifolio-background: #7838fb;
+$skill-color: #555;
+$progress-color: #ece6fa;
+
+//Tema Dark
+$dark: #222;
+$light-one-dark: #ccc;
+$light-two-dark: #e7e3e3;
+$light-three-dark: #3d404b;
+$dark-one-dark: #f3f3f3;
+$dark-two-dark: #fff;
+$main-color-dark: #64bcf4;
+$main-color-active-dark: #5bacdf;
+$portifolio-background-dark: #192e3a;
+$skill-color-dark: #555;
+$skill-color-two: #3d404bde;
+$progress-color-dark: #ece6fa;
+$footer-color: #aaa;
+$footer-links: #888;
+$footer-bottom: #7b7b7b;
+$box-shadow: 0px 0px 20px rgb(0, 0, 0, 10%);
+
+// Fontes
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+$font-text: "Poppins", sans-serif;
+$font-menu: 1.05rem;
+$font-menu-active: 1rem;
+$font-text-height: 1.25rem;
+$font-h2: 1.25rem;
+$font-h3: 1.125rem;
+$font-normal: 0.938rem;
+$font-small: 0.813rem;
+$font-smaller: 0.75rem;
+$font-medium: 500;
+$font-semi-bold: 600;
+
+//Header
+$header-height: 3rem;
+
+// Mergens
+$mb-0-25: 0.25rem;
+$mb-0-5: 0.5rem;
+$mb-0-75: 0.75rem;
+$mb-1: 1rem;
+$mb-1-5: 1.5rem;
+$mb-2: 2rem;
+$mb-2-5: 2.5rem;
+$mb-3: 3rem;
+
+// Z-index
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-modal: 1000;
+
+//Fontes para dispositivos grandes
+@media screen and (min-width: 968px) {
+    $font-big: 3rem;
+    $font-h1: 2.25rem;
+    $font-h2: 1.5rem;
+    $font-h3: 1.25rem;
+    $font-normal: 1rem;
+    $font-small: 0.875rem;
+    $font-smaller: 0.813rem;
+}

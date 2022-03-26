@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Voante | Luis Henrique</title>
+    <link rel="icon" href="img/passaro.png" type="image/x-icon">
+    <div class="lds-dual-ring">
+        <div></div>
+    </div>
+</head>
+
+<body class="dark stop">
+
+    <!-- Header-->
+    <header class="header">
+        <!-- Menu -->
+        <nav class="menu">
+            <div class="container">
+                <div class="logo">
+                    <a href="#"><img class="js-card-animation" src="./img/shapes/passaro.png" alt=""></a>
+
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#empresas">Empresas</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                </div>
+
+                <button class="toggle-btn">
+                    <i class="uil uil-moon" aria-hidden="true"></i>
+                    <i class="uil uil-sun" aria-hidden="true"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home__content">
+            <div class="container grid-two">
+                <div class="column-one">
+                    <div class="social-media">
+                        <a href="#" class="social-link">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="uil uil-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="uil uil-instagram-alt"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="uil uil-facebook"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <h1 class="home__content__title">Luis Henrique</h1>
+                        <p class="home__content__text text">
+                            Olá, sou Luis Henrique, desenvolvedor front-end. Voante igual periquito!
+                        </p>
+                        <a href="#" class="home__content__btn btn">Download CV</a>
+                    </div>
+                </div>
+
+                <div class="column-two image">
+                    <svg class="img-element z-index" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" fill="#6b44e0">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                        130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                        97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                        0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                        165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                        129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            <image class="image__eu" href="img/eu.png" />
+                        </g>
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="services section" id="servicos">
+        <div class="container">
+            <div class="services__header">
+                <h3 class="services__header__title" data-title="What I Do">Services</h3>
+                <p class="services__header__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Alias,
+                    vero?</p>
+            </div>
+            <!-- Cards -->
+            <div class="cards">
+                <div class="cards__wrap">
+                    <img src="img/shapes/points3.png" class="points points1 points-sq">
+                    <!-- Card 1 -->
+                    <div class="card js-card-animation" data-card="UI/UX">
+                        <div class="card__content">
+                            <img src="img/design-icon.png" class="cards__icon">
+                            <h3 class="card__title title-sm">Web Design</h3>
+                            <p class="card__text text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Laborum,
+                                odio. Rem, ipsa.</p>
+                            <a href="#" class="btn small">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="cards__wrap">
+                    <div class="card js-card-animation" data-card="Code">
+                        <div class="card__content">
+                            <img src="img/code-icon.png" class="cards__icon">
+                            <h3 class="card__title title-sm">Web Development</h3>
+                            <p class="card__text text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Laborum, odio.
+                                Rem,
+                                ipsa.</p>
+                            <a href="#" class="btn small">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="cards__wrap">
+                    <img src="img/shapes/points3.png" class="points points2 points-sq">
+                    <div class="card js-card-animation" data-card="App">
+                        <div class="card__content">
+                            <img src="img/app-icon.png" class="cards__icon">
+                            <h3 class="card__title title-sm">App Development</h3>
+                            <p class="card__text text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Laborum, odio.
+                                Rem,
+                                ipsa.</p>
+                            <a href="#" class="btn small">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfólio -->
+    <section class="portfolio section" id="portfolio">
+        <div class="background-bg">
+            <div class="overlay overlay-sm">
+                <img src="img/shapes/half-circle.png" class="shape half-circle1">
+                <img src="img/shapes/half-circle.png" class="shape half-circle2">
+                <img src="img/shapes/square.png" class="shape square">
+                <img src="img/shapes/wave.png" class="shape wave">
+                <img src="img/shapes/circle.png" class="shape circle">
+                <img src="img/shapes/triangle.png" class="shape triangle">
+                <img src="img/shapes/x.png" class="shape xshape">
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="portfolio__header">
+                <h3 class="title" data-title="Meus trabalhos">Portfólio</h3>
+            </div>
+
+            <div class="portfolio__body">
+                <div class="portfolio__filter">
+                    <button class="filter-btn active" data-filter="*">All</button>
+                    <button class="filter-btn" data-filter=".ui">UI/UX</button>
+                    <button class="filter-btn" data-filter=".webdev">Web Dev</button>
+                    <button class="filter-btn" data-filter=".appdev">Mobile App</button>
+                    <button class="filter-btn" data-filter=".logo">Logo Design</button>
+                </div>
+                <div class="grid">
+                    <div class="grid-item logo">
+                        <div class="gallery-image">
+                            <img src="img/portfolio/port1.jpg">
+                            <div class="img-overlay">
+                                <div class="plus"></div>
+                                <div class="img-description">
+                                    <h3>Logo Design</h3>
+                                    <h5>View Demo</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item webdev">
+                        <div class="gallery-image">
+                            <img src="img/portfolio/port2.png">
+                            <div class="img-overlay">
+                                <div class="plus"></div>
+                                <div class="img-description">
+                                    <h3>App Development</h3>
+                                    <h5>View Demo</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item ui webdev">
+                        <div class="gallery-image">
+                            <img src="img/portfolio/port3.png">
+                            <div class="img-overlay">
+                                <div class="plus"></div>
+                                <div class="img-description">
+                                    <h3>Web Design</h3>
+                                    <h5>View Demo</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item ui">
+                        <div class="gallery-image">
+                            <img src="img/portfolio/port4.png">
+                            <div class="img-overlay">
+                                <div class="plus"></div>
+                                <div class="img-description">
+                                    <h3>UI / UX Design</h3>
+                                    <h5>View Demo</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item logo">
+                        <div class="gallery-image">
+                            <img src="img/portfolio/port5.jpg">
+                            <div class="img-overlay">
+                                <div class="plus"></div>
+                                <div class="img-description">
+                                    <h3>Web Development</h3>
+                                    <h5>View Demo</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item appdev">
+                        <div class="gallery-image">
+                            <img src="img/portfolio/port6.jpg">
+                            <div class="img-overlay">
+                                <div class="plus"></div>
+                                <div class="img-description">
+                                    <h3>Web Design</h3>
+                                    <h5>View Demo</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item logo">
+                        <div class="gallery-image">
+                            <img src="img/portfolio/port7.jpg">
+                            <div class="img-overlay">
+                                <div class="plus"></div>
+                                <div class="img-description">
+                                    <h3>Logo Design</h3>
+                                    <h5>View Demo</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item appdev ui">
+                        <div class="gallery-image">
+                            <img src="img/portfolio/port8.png">
+                            <div class="img-overlay">
+                                <div class="plus"></div>
+                                <div class="img-description">
+                                    <h3>App Development</h3>
+                                    <h5>View Demo</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item ui webdev">
+                        <div class="gallery-image">
+                            <img src="img/portfolio/port9.png">
+                            <div class="img-overlay">
+                                <div class="plus"></div>
+                                <div class="img-description">
+                                    <h3>Logo Design</h3>
+                                    <h5>View Demo</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="more-folio">
+                    <a href="#" class="btn">More Folio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="about section" id="sobre">
+        <div class="container">
+            <div class="about__header">
+                <h3 class="title" data-title="Quem eu sou">Sobre Mim</h3>
+            </div>
+
+            <div class="section__body grid-two">
+                <div class="column-1">
+                    <h3 class="title-sm">Hello, I'm</h3>
+                    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum perferendis
+                        tenetur
+                        molestias repellendus cumque. Iste ex exercitationem perferendis ullam accusantium!</p>
+                    <div class="skills">
+                        <div class="skill html">
+                            <h3 class="skill__title">HTML</h3>
+                            <div class="skill__bar">
+                                <div class="skill__bar__progress" data-progress="65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill css">
+                            <h3 class="skill__title">CSS/SCSS</h3>
+                            <div class="skill__bar">
+                                <div class="skill__bar__progress" data-progress="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill bs">
+                            <h3 class="skill__title">Bootstrap</h3>
+                            <div class="skill__bar">
+                                <div class="skill__bar__progress" data-progress="50%"></div>
+                            </div>
+                        </div>
+                        <div class="skill js">
+                            <h3 class="skill__title">Javascript</h3>
+                            <div class="skill__bar">
+                                <div class="skill__bar__progress" data-progress="30%"></div>
+                            </div>
+                        </div>
+                        <div class="skill wp">
+                            <h3 class="skill__title">WordPress</h3>
+                            <div class="skill__bar">
+                                <div class="skill__bar__progress" data-progress="60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="column-2 image">
+                    <img src="img/shapes/points4.png" class="points">
+                    <svg class="img-element z-index" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" fill="#6b44e0">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                            0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                            -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            <image class="image__eu" href="img/eu.png" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dados -->
+    <section class="records">
+        <div class="overlay overlay-sm">
+            <img src="./img/shapes/square.png" alt="" class="shape square1">
+            <img src="./img/shapes/square.png" alt="" class="shape square2">
+            <img src="./img/shapes/circle.png" alt="" class="shape circle">
+            <img src="./img/shapes/half-circle.png" alt="" class="shape half-circle">
+            <img src="./img/shapes/wave.png" alt="" class="shape wave wave1">
+            <img src="./img/shapes/wave.png" alt="" class="shape wave wave2">
+            <img src="./img/shapes/x.png" alt="" class="shape xshape">
+            <img src="./img/shapes/triangle.png" alt="" class="shape triangle">
+        </div>
+        <div class="container">
+            <!-- Circulo 1 -->
+            <div class="wrap">
+                <div class="records__circle">
+                    <h2 class="number" data-num="235">0</h2>
+                    <h4 class="sub-title">Projects</h4>
+                </div>
+            </div>
+            <!-- Circulo 2 -->
+            <div class="wrap">
+                <div class="records__circle active">
+                    <h2 class="number" data-num="174">0</h2>
+                    <h4 class="sub-title">Happy Clients</h4>
+                </div>
+            </div>
+            <!-- Circulo 3 -->
+            <div class="wrap">
+                <div class="records__circle">
+                    <h2 class="number" data-num="892">0</h2>
+                    <h4 class="sub-title">Work Hous</h4>
+                </div>
+            </div>
+            <!-- Circulo 4 -->
+            <div class="wrap">
+                <div class="records__circle">
+                    <h2 class="number" data-num="368">0</h2>
+                    <h4 class="sub-title">Awards</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Noticias -->
+    <section class="blog section">
+        <div class="container">
+            <div class="section__header">
+                <h3 class="title" data-title="Last News">My blog</h3>
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quo.
+                </p>
+            </div>
+            <div class="blog">
+                <!-- Card 1 -->
+                <div class="wrap">
+                    <img src="./img/shapes/points3.png" class="points points-sq">
+                    <div class="card">
+                        <div class="image">
+                            <img src="./img/blog1.png">
+                        </div>
+
+                        <div class="content">
+                            <div class="info">
+                                <h5 class="date">March, 19 2020</h5>
+                                <h5 class="user"><i class="uil uil-user"></i>Admin</h5>
+                            </div>
+
+                            <h3 class="title-sm">This is a short title</h3>
+                            <p class="text">
+                                Lorem ipsum, dolor sit amet elit. rem poimus? Tempora
+                                expedita eos autem! Lorem ipsum, dolor sit met.
+                            </p>
+                            <a href="#" class="btn small">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="wrap">
+                    <div class="card">
+                        <div class="image">
+                            <img src="./img/blog2.png">
+                        </div>
+
+                        <div class="content">
+                            <div class="info">
+                                <h5 class="date">December, 12 2020</h5>
+                                <h5 class="user"><i class="uil uil-user"></i>Admin</h5>
+                            </div>
+
+                            <h3 class="title-sm">This is a short title</h3>
+                            <p class="text">
+                                Lorem ipsum, dolor sit amet elit. rem poimus?
+                            </p>
+                            <a href="#" class="btn small">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="wrap">
+                    <div class="card">
+                        <div class="image">
+                            <img src="./img/blog3.png">
+                        </div>
+
+                        <div class="content">
+                            <div class="info">
+                                <h5 class="date">march, 19 2020</h5>
+                                <h5 class="user"><i class="uil uil-user"></i>Admin</h5>
+                            </div>
+
+                            <h3 class="title-sm">This is a short title</h3>
+                            <p class="text">
+                                Lorem ipsum, dolor sit amet elit. rem poimus? Tempora
+                                expedita eos autem!
+                            </p>
+                            <a href="#" class="btn small">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trabalhos -->
+    <section class="jobs section" id="empresas">
+        <div class="container">
+            <div class="section__header">
+                <h3 class="title" data-title="What People Say">Empresas</h3>
+            </div>
+        </div>
+
+        <div class="jobs__carousel">
+            <div class="js-slick-carousel">
+                <div class="item">
+                    <a href="//cemahospital.com.br" target="_blank">
+                        <img src="img/twoup/cema.png">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="//grupohernandez.com.br" target="_blank">
+                        <img src="img/twoup/gh.png">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="//anx.ind.br" target="_blank">
+                        <img src="img/twoup/anx.png">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="//segertech.com.br" target="_blank">
+                        <img src="img/twoup/segertech.png">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="//segertech.com.br/ruckus/" target="_blank">
+                        <img src="img/twoup/ruckus-wifi.png">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="//openglobe.com.br" target="_blank">
+                        <img src="img/twoup/openglobe.png">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="//rpsafe.com.br" target="_blank">
+                        <img src="img/twoup/rpsafe.png">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="//crya.com.br" target="_blank">
+                        <img src="img/twoup/crya.png">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="//bcae.com.br" target="_blank">
+                        <img src="img/twoup/bcae.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="jobs__dice">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="//2up.com.br" target="_blank" class="box" fade-direction="bottom" fade-time="1.1">
+                            <svg viewBox="0 0 167.12 85">
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M87,0V85H71.87V33.25L48.12,71.37H39L14.87,32.75,15.12,85H0V0H10.75L43.5,52.87,76.25,0Zm80.12,71.37V85H97.25V77.88l47.5-64.26H99V0h67.62V7.12L120.75,71.37Z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <div class="text">
+                                <h3>MZ Group</h3>
+                                <p>09/2020 até o momento</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <p class="info">* Não possuo
+                                direitos sobre esses projetos</p>
+                            <p>Todos os projetos
+                                foram criados do zero, sem utilizar CMS ou layout pronto.</p>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <p><strong>Tipos de trabalhos
+                                realizados:</strong> Site Institucional, Landing Pages, Sistemas Web, E-commerce,
+                            Plataforma de Assinaturas para E-mail e E-mail Marketing.</p>
+                        <p><strong>Processo:</strong> Assim que
+                            criado e aprovado pelo cliente, me direcionavam o Adobe XD onde o desenvolvimento era
+                            iniciado do ZERO.</p>
+                        <p><strong>Tecnologias:</strong>HTML5, CSS3, SASS, Bootstrap, JavaScript, JQuery, PHP,
+                            WordPress e
+                            Git</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border"></div>
+    </section>
+
+    <!-- Formulário -->
+    <section class="contact" id="contato">
+        <div class="container">
+            <div class="contact-box">
+                <div class="contact-info">
+                    <h3 class="title">Get in touch</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, repudiandae.
+                    </p>
+                    <div class="information-wrap">
+                        <div class="information">
+                            <div class="contact-icon">
+                                <i class="uil uil-map-marker-alt"></i>
+                            </div>
+                            <p class="info-text">92 Cherry Drive Unimodale, NY 11553</p>
+                        </div>
+
+                        <div class="information">
+                            <div class="contact-icon">
+                                <i class="uil uil-message"></i>
+                            </div>
+                            <p class="info-text">92 Cherry Drive Unimodale, NY 11553</p>
+                        </div>
+
+                        <div class="information">
+                            <div class="contact-icon">
+                                <i class="uil uil-mobile-vibrate"></i>
+                            </div>
+                            <p class="info-text">92 Cherry Drive Unimodale, NY 11553</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3 class="title">Contact Me</h3>
+                    <form action="">
+                        <div class="row">
+                            <input class="contact-input" type="text" placeholder="Nome">
+                            <input class="contact-input" type="text" placeholder="Sobrenome">
+                        </div>
+                        <div class="row">
+                            <input class="contact-input" type="text" placeholder="Telefone">
+                            <input class="contact-input" type="email" placeholder="E-mail">
+                        </div>
+                        <div class="row">
+                            <textarea name="mensagem" class="contact-input textarea" placeholder="Mensagem"></textarea>
+                        </div>
+                        <a href="#" class="btn">Enviar</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fale comigo -->
+    <section class="hireme" id="hireme">
+        <div class="container">
+            <h3 class="title" data--title="Here me">Let's talk about a project</h3>
+            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, rem distinctio magni
+                error est dicta necessitatibus fuga quasi quas amet.</p>
+            <a href="#" class="btn">Here me</a>
+        </div>
+    </section>
+
+    <a class="gotop">
+        <i class="uil uil-arrow-circle-up"></i>
+        <i class="uil uil-angle-double-up"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid-4">
+                <div class="grid-4-col footer-about">
+                    <h3 class="title-sm">About</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, deleniti?
+                    </p>
+                </div>
+
+                <div class="grid-4-col footer-links">
+                    <h3 class="title-sm">Links</h3>
+                    <ul>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#empresas">Empresas</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="grid-4-col footer-links">
+                    <h3 class="title-sm">Services</h3>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Dev Web</a></li>
+                        <li><a href="#">App Design</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">UI Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="grid-4-col footer-news">
+                    <h3 class="title-sm">Subscribe</h3>
+                    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, error.</p>
+                    <div class="footer-input-wrap">
+                        <input type="email" class="footer-input" placeholder="Email">
+                        <a href="#" class="input-arrow">
+                            <i class="uil uil-angle-right-b"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p class="text">
+                        Copyright &copy;<span class="copydate"></span> Todos os direitos reservados | Feito por
+                        <span class="owner">Luis Henrique</span>
+                    </p>
+                </div>
+
+                <div class="followme">
+                    <div class="followme-wrap">
+                        <h3>Me siga</h3>
+                        <span class="followme-wrap-line"></span>
+                        <div class="social-media">
+                            <a href="#">
+                                <i class="uil uil-linkedin"></i>
+                            </a>
+                            <a href="#">
+                                <i class="uil uil-github"></i>
+                            </a>
+                            <a href="#">
+                                <i class="uil uil-instagram-alt"></i>
+                            </a>
+                            <a href="#">
+                                <i class="uil uil-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
